@@ -47,7 +47,8 @@ RUN dpkg --add-architecture i386 && \
         tmux \
         util-linux \
         unzip \
-        wget && \
+        wget \
+        xz-utils && \
     apt-get -y autoremove && \
     apt-get -y clean && \
     rm -rf /var/lib/apt/lists/* && \
